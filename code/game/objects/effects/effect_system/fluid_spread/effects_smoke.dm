@@ -305,8 +305,8 @@
 
 /obj/effect/particle_effect/fluid/smoke/bad/blood/can_affect_mob(mob/living/carbon/smoker)
 	. = ..()
-	if(locate(/datum/action/cooldown/spell/vanishing_act) in smoker.actions)
-		return FALSE
+	//if(locate(/datum/action/cooldown/spell/vanishing_act) in smoker.actions)
+	//	return FALSE
 
 /datum/effect_system/fluid_spread/smoke/bad/blood
 	effect_type = /obj/effect/particle_effect/fluid/smoke/bad/blood

@@ -74,7 +74,7 @@
 	ears = /obj/item/radio/headset/heads/cmo
 	shoes = /obj/item/clothing/shoes/really_blue_sneakers
 	l_pocket = /obj/item/pinpointer/crew
-	l_hand = /obj/item/aether_tome
+	//l_hand = /obj/item/aether_tome
 	mask = /obj/item/clothing/mask/utopia/augur
 
 	back = /obj/item/storage/backpack/satchel/leather
@@ -83,7 +83,7 @@
 
 	backpack_contents = list(
 		/obj/item/diagnosis_book = 1,
-		/obj/item/storage/box/chalk = 1,
+		///obj/item/storage/box/chalk = 1,
 	)
 
 	chameleon_extras = list(

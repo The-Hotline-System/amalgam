@@ -10,7 +10,7 @@
  * * extra_checks: An optional callback to check in addition to the default checks.
  * * interaction_key: An optional non-numeric value to disamibiguate the action, to be used with DOING_INTERACTION() macros. Defaults to target.
  * * max_interact_count: The action will automatically fail if they are already performing this many or more actions with the given interaction_key.
- * * display: An atom or image to display over the user's head. Only works with DO_PUBLIC flag.
+ * * display: An atom or image to display over the user's head. Only works with DO_PUBLIC flag. // COMMENTED OUT //
  */
 /proc/do_after(atom/movable/user, atom/target, time = 0, timed_action_flags = NONE, progress = TRUE, datum/callback/extra_checks, interaction_key, max_interact_count = 1, image/display)
 	if(!user)
@@ -44,7 +44,7 @@
 			return
 		LAZYSET(user.do_afters, interaction_key, current_interaction_count + 1)
 
-	var/datum/timed_action/action = new(user, target, time, progress, timed_action_flags, extra_checks, display)
+	var/datum/timed_action/action = new(user, target, time, progress, timed_action_flags, extra_checks)//, display)
 
 	. = action.wait()
 

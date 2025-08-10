@@ -11,5 +11,5 @@
 		/obj/item/reagent_containers/syringe,
 		/obj/item/reagent_containers/hypospray,
 		/obj/item/pen,
-		/obj/item/chalk,
+		///obj/item/chalk,
 	))

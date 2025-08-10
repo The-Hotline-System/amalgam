@@ -126,7 +126,7 @@
 /datum/preferences/proc/html_create_subheader()
 	. = list()
 	. += "<div style='text-align: center'><b><span class='computerText'>Character Preview</span></b><br>"
-	for(var/option in list(PREVIEW_PREF_JOB, PREVIEW_PREF_LOADOUT, PREVIEW_PREF_UNDERWEAR))
+	for(var/option in list(PREVIEW_PREF_JOB, PREVIEW_PREF_LOADOUT))
 		if(preview_pref == option)
 			. += "<span class='linkOn'>[option]</span>"
 		else

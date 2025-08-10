@@ -735,12 +735,14 @@ TYPEINFO_DEF(/atom)
 		. += "<hr>"
 
 	var/place_linebreak = FALSE
+	// REMOVED CODEX ENTRY ON EXAMINE //
+	/*
 	var/datum/codex_entry/entry = SScodex.get_codex_entry(get_codex_value(user))
 	if(entry)
 		var/information_type = length(entry.controls_text) ? "controls" : "relevant information"
 		. += "<span class='obviousnotice'>The codex has <b><a href='?src=\ref[SScodex];show_examined_info=\ref[src];show_to=\ref[user]'>[information_type]</a></b> available.</span>"
 		place_linebreak = TRUE
-
+	*/
 	if(isitem(src) && length(slapcraft_examine_hints_for_type(type)))
 		. += "<span class='obviousnotice'><b><a href='?src=\ref[user.client];show_slapcraft_hints=[type];'>You could craft [(length(slapcraft_examine_hints_for_type(type)) > 1) ? "several things" : "something"] with it.</a><b></span>"
 		place_linebreak = TRUE

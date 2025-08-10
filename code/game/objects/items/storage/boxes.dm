@@ -1607,7 +1607,7 @@ TYPEINFO_DEF(/obj/item/storage/box/plastic)
 							  /obj/item/food/sustenance_bar/wonka = 1))
 		new randomFood(src)
 	new /obj/item/storage/box/gum/wake_up(src)
-
+/*
 /obj/item/storage/box/chalk
 	name = "box of chalk"
 	desc = "A box able to fit 9 sticks of chalk."
@@ -1618,3 +1618,4 @@ TYPEINFO_DEF(/obj/item/storage/box/plastic)
 /obj/item/storage/box/chalk/PopulateContents()
 	for(var/i in 1 to 9)
 		new /obj/item/chalk(src)
+*/

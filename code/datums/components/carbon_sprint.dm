@@ -3,7 +3,7 @@
 	var/sprint_key_down = FALSE
 	var/sprinting = FALSE
 	var/sustained_moves = 0
-	var/last_dust
+	//var/last_dust
 	///Our very own dust
 	var/obj/effect/sprint_dust/dust = new(null)
 
@@ -41,24 +41,30 @@
 	if(!sprinting)
 		sprinting = TRUE
 		carbon_parent.set_move_intent(MOVE_INTENT_SPRINT)
+		/*
 		dust.appear("sprint_cloud", direct, get_turf(carbon_parent), 0.6 SECONDS)
 		last_dust = world.time
+		*/
 		sustained_moves += _step_size
 
-	else if(world.time > last_dust + STAMINA_SUSTAINED_RUN_GRACE)
+	else
 		if(direct & carbon_parent.last_move)
+			/*
 			if((sustained_moves < STAMINA_SUSTAINED_SPRINT_THRESHOLD) && ((sustained_moves + _step_size) >= STAMINA_SUSTAINED_SPRINT_THRESHOLD))
 				dust.appear("sprint_cloud_small", direct, get_turf(carbon_parent), 0.4 SECONDS)
 				last_dust = world.time
+			*/
 			sustained_moves += _step_size
 
 		else
+			/*
 			if(sustained_moves >= STAMINA_SUSTAINED_SPRINT_THRESHOLD)
 				dust.appear("sprint_cloud_small", direct, get_turf(carbon_parent), 0.4 SECONDS)
 				last_dust = world.time
 			if(direct & turn(carbon_parent.last_move, 180))
 				dust.appear("sprint_cloud_tiny", direct, get_turf(carbon_parent), 0.3 SECONDS)
 				last_dust = world.time
+			*/
 			sustained_moves = 0
 
 	carbon_parent.stamina.adjust(-STAMINA_SPRINT_COST)
@@ -72,7 +78,7 @@
 /datum/component/carbon_sprint/proc/stopSprint()
 	sprinting = FALSE
 	sustained_moves = FALSE
-	last_dust = null
+	//last_dust = null
 	carbon_parent.set_move_intent(MOVE_INTENT_RUN)
 
 /datum/component/carbon_sprint/proc/can_sprint()
