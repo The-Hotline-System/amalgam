@@ -18,6 +18,7 @@
 				QDEL_IN(new /obj/effect/projectile_lighting(T, light_color_override, light_range, light_intensity, instance_key), qdel_in > 0? qdel_in : 5)
 		line = null
 	if(qdel_in)
+		animate(PB, time = qdel_in, alpha = 0)
 		QDEL_IN(PB, qdel_in)
 
 /obj/effect/projectile/tracer
@@ -76,3 +77,11 @@
 
 /obj/effect/projectile/tracer/sniper
 	icon_state = "sniper"
+
+/obj/effect/projectile/tracer/bullet
+	icon_state = "tracer"
+	color = COLOR_MUZZLE_FLASH
+	light_color = COLOR_MUZZLE_FLASH
+	light_power = 0.5
+	alpha = 225
+	layer = 4.08

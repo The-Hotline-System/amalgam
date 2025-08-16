@@ -51,7 +51,7 @@
 	var/bonus_spread = 0
 	if(istype(user))
 		for(var/obj/item/gun/gun in user.held_items)
-			if(gun == src || (gun.gun_flags & NO_AKIMBO))
+			if(gun == src || (CHECK_BITFIELD(gun.gun_flags, NO_AKIMBO)))
 				continue
 
 			if(gun.can_trigger_gun(user, akimbo_usage = TRUE))
@@ -72,7 +72,7 @@
 
 	var/mob/living/carbon/human/H = user
 	for(var/obj/item/gun/gun in H.held_items)
-		if(gun == src || (gun.gun_flags & NO_AKIMBO))
+		if(gun == src || (CHECK_BITFIELD(gun.gun_flags, NO_AKIMBO)))
 			continue
 
 		if(gun.can_trigger_gun(user, akimbo_usage = TRUE))
@@ -147,9 +147,9 @@
 					ignored_mobs = user
 			)
 
-	if(smoking_gun)
-		var/x_component = sin(get_angle(user, pbtarget)) * 40
-		var/y_component = cos(get_angle(user, pbtarget)) * 40
+	if(CHECK_BITFIELD(gun_flags, GUN_SMOKE_PARTICLES))
+		var/x_component = sin((get_angle(user, pbtarget))) * 40
+		var/y_component = cos((get_angle(user, pbtarget))) * 40
 		var/obj/effect/abstract/particle_holder/gun_smoke = new(get_turf(src), /particles/firing_smoke)
 		gun_smoke.particles.velocity = list(x_component, y_component)
 		addtimer(VARSET_CALLBACK(gun_smoke.particles, count, 0), 5)

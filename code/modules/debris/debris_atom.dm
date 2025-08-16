@@ -14,7 +14,7 @@
 	var/angle = !isnull(P.Angle) ? P.Angle : round(get_angle(P.starting, src), 1)
 	var/x_component = sin(angle) * debris_velocity
 	var/y_component = cos(angle) * debris_velocity
-	var/x_component_smoke = sin(angle) * -15
+	var/	 = sin(angle) * -15
 	var/y_component_smoke = cos(angle) * -15
 	var/obj/effect/abstract/particle_holder/debris_visuals
 	var/obj/effect/abstract/particle_holder/smoke_visuals

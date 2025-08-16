@@ -322,7 +322,7 @@
 				new /obj/effect/temp_visual/dir_setting/bloodsplatter(target_loca, splatter_dir, splatter_color)
 			if(prob(33))
 				L.add_splatter_floor(target_loca)
-		else if(impact_effect_type && !hitscan)
+		else if(impact_effect_type)
 			new impact_effect_type(target_loca, hitx, hity)
 
 		var/organ_hit_text = ""
@@ -1105,7 +1105,7 @@
 		beam_segments[beam_index] = point_cache
 	generate_hitscan_tracers(null, null, impacting)
 
-/obj/projectile/proc/generate_hitscan_tracers(cleanup = TRUE, duration = 3, impacting = TRUE)
+/obj/projectile/proc/generate_hitscan_tracers(cleanup = TRUE, duration = 1.5, impacting = TRUE)
 	if(!length(beam_segments))
 		return
 

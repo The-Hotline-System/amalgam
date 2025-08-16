@@ -628,11 +628,7 @@
 /turf/open/floor/plating,
 /area/station/construction)
 "do" = (
-/obj/machinery/light/directional/east,
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/iron,
+/turf/open/floor/black,
 /area/station/construction)
 "dp" = (
 /obj/machinery/light/directional/west,
@@ -813,7 +809,6 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname/directional/west,
-/obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/station/construction)
 "dY" = (
@@ -1378,11 +1373,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "gG" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron,
+/turf/open/floor/stone,
 /area/station/construction)
 "gI" = (
 /obj/machinery/light/directional/north,
@@ -1437,6 +1428,9 @@
 	dir = 4
 	},
 /obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron,
+/area/station/construction)
+"iL" = (
 /turf/open/floor/iron,
 /area/station/construction)
 "ji" = (
@@ -1505,6 +1499,9 @@
 /obj/structure/server,
 /turf/open/floor/iron/dark,
 /area/station/science/misc_lab)
+"ks" = (
+/turf/open/floor/iron/cafeteria,
+/area/station/construction)
 "lc" = (
 /turf/open/floor/engine,
 /area/station/hallway/secondary/entry)
@@ -1643,6 +1640,9 @@
 /obj/structure/cable/smart_cable/color/yellow,
 /turf/open/floor/iron,
 /area/station/science)
+"pp" = (
+/turf/open/floor/iron/checker,
+/area/station/construction)
 "pu" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 5
@@ -1697,6 +1697,10 @@
 "qQ" = (
 /turf/open/floor/engine,
 /area/station/cargo/miningoffice)
+"rb" = (
+/obj/machinery/light/floor,
+/turf/open/floor/black,
+/area/station/construction)
 "rK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -1889,6 +1893,11 @@
 /obj/structure/cable/smart_cable/color/yellow,
 /turf/open/floor/iron,
 /area/station/engineering/gravity_generator)
+"wM" = (
+/turf/open/floor/iron/checker{
+	dir = 4
+	},
+/area/station/construction)
 "wS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -2037,6 +2046,10 @@
 "Ce" = (
 /turf/open/floor/iron,
 /area/station/medical/chemistry)
+"Co" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/checker,
+/area/station/construction)
 "Cr" = (
 /obj/structure/cable/smart_cable/color/yellow,
 /obj/machinery/power/rtg/debug,
@@ -2234,6 +2247,9 @@
 	},
 /turf/open/floor/iron,
 /area/station/command/bridge)
+"Iz" = (
+/turf/open/floor/wood,
+/area/station/construction)
 "IE" = (
 /obj/machinery/gravity_generator/main,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -2313,6 +2329,10 @@
 /obj/structure/cable/smart_cable/color/yellow,
 /turf/open/floor/iron,
 /area/station/construction)
+"Kr" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/plating,
+/area/station/construction)
 "Kx" = (
 /obj/structure/table,
 /obj/item/analyzer,
@@ -2320,6 +2340,10 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
+"Lk" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/cafeteria,
+/area/station/construction)
 "Lv" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -2573,6 +2597,10 @@
 "Tt" = (
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
+"Tw" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron,
+/area/station/construction)
 "TF" = (
 /obj/structure/cable/smart_cable/color/yellow,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -6020,13 +6048,13 @@ Ht
 bE
 cN
 Py
-dm
+dy
 dy
 ii
 dX
 dy
 dy
-gG
+dy
 ii
 dy
 dm
@@ -6112,16 +6140,16 @@ Ht
 zV
 cP
 Kl
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+do
+do
+do
+do
+do
+do
+do
+do
+do
 dL
 sr
 nn
@@ -6204,16 +6232,16 @@ bE
 Et
 zy
 zn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+Tw
+iL
+do
+gG
+gG
+do
+Co
+pp
+do
 dL
 cN
 AE
@@ -6296,16 +6324,16 @@ bE
 bE
 ef
 cY
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+iL
+iL
+do
+gG
+gG
+do
+wM
+pp
+do
 dL
 tE
 ZP
@@ -6388,16 +6416,16 @@ bE
 bE
 cN
 dW
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+iL
+iL
+do
+gG
+gG
+do
+pp
+pp
+do
 dL
 cN
 ZP
@@ -6480,16 +6508,16 @@ bE
 bE
 cN
 cY
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+do
+do
+do
+rb
+do
+do
+do
+do
+do
 dL
 cN
 fI
@@ -6572,16 +6600,16 @@ lX
 bE
 cN
 cY
+do
 dn
 dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+Iz
+Iz
+do
+ks
+ks
+do
 dZ
 cN
 Tt
@@ -6664,16 +6692,16 @@ bE
 bE
 cN
 cY
+do
 dn
 dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+Iz
+Iz
+do
+ks
+ks
+do
 dL
 cN
 Tt
@@ -6756,16 +6784,16 @@ bE
 bE
 cN
 cY
+do
 dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+Kr
+do
+Iz
+Iz
+do
+ks
+Lk
+do
 dL
 cN
 Tt
@@ -6848,16 +6876,16 @@ bE
 bE
 ef
 cY
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+do
+do
+do
+do
+do
+do
+do
+do
+do
 dL
 cN
 Tt
@@ -6940,16 +6968,16 @@ bE
 bE
 ef
 cY
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
-dn
+do
+do
+do
+do
+do
+do
+do
+do
+do
+do
 dL
 cN
 Tt
@@ -7032,16 +7060,16 @@ bE
 bE
 cN
 dK
-do
+dz
 dz
 EG
 gy
 dz
 dz
-gy
+dz
 EG
 dz
-do
+dz
 cZ
 cN
 Tt

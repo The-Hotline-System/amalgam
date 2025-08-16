@@ -6,6 +6,7 @@
 	anchored = TRUE
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	appearance_flags = LONG_GLIDE
+	light_system = OVERLAY_LIGHT
 
 /obj/effect/projectile/singularity_pull()
 	return

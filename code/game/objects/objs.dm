@@ -41,6 +41,15 @@
 			return FALSE
 	return ..()
 
+/// A list of all /obj by their id_tag
+GLOBAL_LIST_EMPTY(objects_by_id_tag)
+
+/obj/Initialize(mapload)
+	. = ..()
+	if (id_tag)
+		GLOB.objects_by_id_tag[id_tag] = src
+	add_debris_element() //monkestation port
+
 /obj/Destroy(force)
 	if((datum_flags & DF_ISPROCESSING))
 		if(ismachinery(src))
@@ -49,6 +58,7 @@
 			STOP_PROCESSING(SSobj, src)
 		stack_trace("Obj of type [type] processing after Destroy(), please fix this.")
 	SStgui.close_uis(src)
+	GLOB.objects_by_id_tag -= id_tag
 	return ..()
 
 

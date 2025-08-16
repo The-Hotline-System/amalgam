@@ -38,3 +38,9 @@
 
 /obj/effect/projectile/muzzle/sniper
 	icon_state = "sniper"
+
+/obj/effect/projectile/muzzle/bullet
+	icon_state = "muzzle_bullet"
+	light_outer_range = 5
+	light_power = 1
+	light_color = COLOR_MUZZLE_FLASH

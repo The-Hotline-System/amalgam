@@ -64,10 +64,6 @@ TYPEINFO_DEF(/obj/item/gun)
 	var/suppressed_sound = 'sound/weapons/gun/general/heavy_shot_suppressed.ogg'
 	var/suppressed_volume = 60
 
-	/* Misc flavor */
-	/// Should smoke particles be created when fired?
-	var/smoking_gun = FALSE
-
 	/* Suppression */
 	/// whether or not a message is displayed when fired
 	var/obj/item/suppressed = null

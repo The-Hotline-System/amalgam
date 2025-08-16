@@ -47,3 +47,10 @@
 
 /obj/effect/projectile/impact/sniper
 	icon_state = "sniper"
+
+/obj/effect/projectile/impact/bullet
+	icon_state = "impact"
+	color = COLOR_MUZZLE_FLASH
+	light_color = COLOR_MUZZLE_FLASH
+	light_power = 0.5
+	alpha = 225

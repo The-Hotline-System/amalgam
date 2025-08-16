@@ -97,6 +97,8 @@
 /// Can't fire with akimbo
 #define NO_AKIMBO (1<<2)
 
+#define GUN_SMOKE_PARTICLES (1<<4)
+
 /// Flags for sharpness in obj/item
 #define SHARP_EDGED (1<<0)
 #define SHARP_POINTY (1<<1)

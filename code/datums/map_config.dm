@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/theseus.json"
+	var/config_filename = "_maps/runtimestation.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -14,9 +14,9 @@
 	var/votable = FALSE
 
 	// Config actually from the JSON - should default to Theseus
-	var/map_name = "Theseus"
-	var/map_path = "map_files/Theseus"
-	var/map_file = "Theseus.dmm"
+	var/map_name = "Runtime Station"
+	var/map_path = "map_files/debug"
+	var/map_file = "runtimestation.dmm"
 	var/webmap_id = "DaedalusMeta"
 
 	var/traits = null
